@@ -6,3 +6,16 @@
   box-sizing: border-box;
   font-family: 'Inter', sans-serif;
 }
+
+body {
+  background-color: rgba(40, 44, 51, 1);
+}
+
+.container {
+  width: 70%;
+  margin: auto;
+}
+
+a{
+  text-decoration: none;
+}
