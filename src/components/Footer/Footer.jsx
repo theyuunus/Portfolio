@@ -18,7 +18,7 @@ export default function Footer() {
                                     <img className="navbar-left-a-img" src={Logo} alt="" />
                                     <h2 className="navbar-left-a-h2">Yunus</h2>
                                 </Link>
-                                <a className="footer-top-left-div-a" href="mailto:obidxojayevbotir@gmail.com">obidxojayevbotir@gmail.com</a>
+                                <a className="footer-top-left-div-a" href="mailto:obidxojayevbotir@gmail.com" target='_blank' rel="noopener noreferrer">obidxojayevbotir@gmail.com</a>
                             </div>
                             <p className="footer-top-left-p">
                                 HTML - layout designer and Front-end developer
@@ -27,13 +27,13 @@ export default function Footer() {
                         <div className="footer-top-right">
                             <h2 className="footer-top-right-h2">Media</h2>
                             <div className="footer-top-right-icons">
-                                <a className="media-bottom-a" href="https://www.instagram.com/obidxojayev_y/" target='_blank'>
+                                <a className="media-bottom-a" href="https://www.instagram.com/obidxojayev_y/" target='_blank' rel="noopener noreferrer">
                                     <FaInstagram className="media-bottom-a-icon" />
                                 </a>
-                                <a className="media-bottom-a" href="https://github.com/theyuunus" target='_blank'>
+                                <a className="media-bottom-a" href="https://github.com/theyuunus" target='_blank' rel="noopener noreferrer">
                                     <FaGithub className="media-bottom-a-icon" />
                                 </a>
-                                <a className="media-bottom-a" href="https://t.me/theyuunus" target='_blank'>
+                                <a className="media-bottom-a" href="https://t.me/theyuunus" target='_blank' rel="noopener noreferrer">
                                     <FaTelegram className="media-bottom-a-icon" />
                                 </a>
                             </div>
