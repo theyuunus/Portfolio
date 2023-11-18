@@ -1,7 +1,6 @@
 import React from 'react'
 import "./HomeHeader.scss"
 import personImg from "../../images/PersonImg.png"
-// import RoundIcon from "../../images/RoundIcon.png"
 
 export default function HomeHeader() {
   return (
