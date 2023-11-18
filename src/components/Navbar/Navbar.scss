@@ -42,10 +42,16 @@
             font-style: normal;
             font-weight: 400;
             line-height: normal;
+            transition: all 0.3s;
 
             &-span {
                 color: var(--primary, #C778DD);
             }
+        }
+
+        &-a:hover {
+            color: var(--white, #FFF);
+            transition: all 0.3s;
         }
     }
 }
@@ -67,7 +73,7 @@
         &-a {
             display: block;
             color: rgba(171, 178, 191, 1);
-            transition: 1s;
+            transition: 0.4s;
 
             &-icon {
                 width: 25px;
@@ -78,7 +84,7 @@
 
         &-a:hover {
             color: var(--white, #FFF);
-            transition: 1s;
+            transition: 0.4s;
         }
     }
 }
