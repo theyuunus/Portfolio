@@ -1,8 +1,13 @@
 import React from 'react'
 import "./HomeHeader.scss"
 import personImg from "../../images/PersonImg.png"
+import ButtonLive from "../ButtonLive/ButtonLive"
+import { Link } from 'react-router-dom'
 
 export default function HomeHeader() {
+  const props = {
+    text: "Contact me!!"
+  }
   return (
     <React.Fragment>
       <div className="container">
@@ -17,6 +22,9 @@ export default function HomeHeader() {
               <p className="homeHeader-top-left-p">
                 He crafts responsive websites where technologies <br /> meet creativity
               </p>
+              <Link to={"contact"}>
+                <ButtonLive {...props} />
+              </Link>
             </div>
             <div className="homeHeader-top-right">
               <div className="homeHeader-top-right-backImg">
@@ -30,7 +38,7 @@ export default function HomeHeader() {
                 </p>
               </div>
               <div className="homeHeader-top-right-round">
-                
+
               </div>
             </div>
           </div>
