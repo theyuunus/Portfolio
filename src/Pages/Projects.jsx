@@ -1,7 +1,10 @@
 import React from 'react'
+import Helmet from '../components/Helmet/Helmet'
 
 export default function Projects() {
   return (
-    <div>Loading ...</div>
+    <Helmet title="Works">
+      Loading ...
+    </Helmet>
   )
 }
