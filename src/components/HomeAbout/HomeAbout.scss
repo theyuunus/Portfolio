@@ -57,7 +57,7 @@
 
     &-right {
 
-        &-dots {
+        &-dots1 {
             width: 84px;
             height: 84px;
             background-image: url("../../images/Dots.png");
@@ -73,7 +73,7 @@
             height: 507px;
         }
 
-        &-dot {
+        &-dots2 {
             width: 104px;
             height: 56px;
             background-image: url("../../images/dots2.png");
@@ -83,6 +83,18 @@
             position: absolute;
             margin-top: -240px;
             margin-left: 220px;
+        }
+
+        &-dots3 {
+            width: 103px;
+            height: 103px;
+            background-image: url("../../images/Dots.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: auto;
+            position: absolute;
+            margin-top: -195px;
+            margin-left: 464px;
         }
     }
 }

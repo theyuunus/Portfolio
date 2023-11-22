@@ -45,15 +45,21 @@
 
             &-a {
                 display: flex;
-                gap: 5px;
+                gap: 10px;
                 align-items: center;
                 color: var(--gray, #ABB2BF);
                 padding-top: 8px;
+                transition: 0.3s;
 
                 &-icon {
                     width: 25px;
                     height: 25px;
                 }
+            }
+
+            &-a:hover {
+                color: var(--white, #FFF);
+                transition: 0.3s;
             }
         }
     }
