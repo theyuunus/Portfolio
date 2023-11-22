@@ -37,9 +37,10 @@ export default function HomeAbout() {
                     </div>
                 </div>
                 <div className="HomeAbout-right">
-                    <div className="HomeAbout-right-dots"></div>
+                    <div className="HomeAbout-right-dots1"></div>
                     <img className="HomeAbout-right-img" src={PersonImg} alt="" />
-                    <div className="HomeAbout-right-dot"></div>
+                    <div className="HomeAbout-right-dots2"></div>
+                    <div className="HomeAbout-right-dots3"></div>
                 </div>
             </div>
         </div>
