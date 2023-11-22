@@ -1,8 +1,13 @@
 import React from 'react'
 import "./HomeAbout.scss"
 import PersonImg from "../../images/PersonImg2.png"
+import ButtonLive from "../ButtonLive/ButtonLive"
+import { Link } from 'react-router-dom'
 
 export default function HomeAbout() {
+    const props = {
+        text: "Read more ->"
+    }
     return (
         <div className="container">
             <div className="HomeAbout">
@@ -26,6 +31,9 @@ export default function HomeAbout() {
                             <br /> <br />
                             Transforming my creativity and knowledge into a websites has been my passion for over a year. I have been helping various clients to establish their presence online. I always strive to learn about the newest technologies and frameworks.
                         </p>
+                        <Link to={"about"}>
+                            <ButtonLive {...props} />
+                        </Link>
                     </div>
                 </div>
                 <div className="HomeAbout-right">
