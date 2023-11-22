@@ -61,6 +61,7 @@ export default function Contact() {
                                 <HiOutlineMail className="contact-bottom-media-a-icon" />
                             </a>
                         </div>
+                        <div className="contact-bottom-backImg"></div>
                     </div>
                 </div>
             </div>

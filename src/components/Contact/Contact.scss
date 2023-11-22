@@ -1,5 +1,5 @@
 .contact {
-    margin-top: 90px;
+    margin-top: 80px;
     margin-bottom: 83px;
 
     &-top {
@@ -67,6 +67,18 @@
                 color: var(--white, #FFF);
                 transition: 0.3s;
             }
+        }
+
+        &-backImg {
+            width: 130px;
+            height: 130px;
+            background-image: url("../../images/Dots.png");
+            position: absolute;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: auto;
+            margin-left: 670px;
+            margin-top: -95px;
         }
     }
 }
