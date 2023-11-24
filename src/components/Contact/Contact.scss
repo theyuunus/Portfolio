@@ -5,10 +5,11 @@
     &-top {
 
         &-h1 {
-            color: var(--white, #FFF);
+            color: #FFF;
+            font-family: Fira Code;
             font-size: 32px;
             font-style: normal;
-            font-weight: 500;
+            font-weight: 600;
             line-height: normal;
 
             &-span {
