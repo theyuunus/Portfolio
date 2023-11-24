@@ -1,0 +1,22 @@
+.AboutSkills {
+    margin-top: 180px;
+
+    &-h1 {
+        color: var(--white, #FFF);
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+
+        &-span {
+            color: var(--primary, #C778DD);
+        }
+    }
+
+    &-card {
+        display: flex;
+        gap: 20px;
+        align-items: flex-start;
+        padding-top: 70px;
+    }
+}
