@@ -1,0 +1,79 @@
+.AboutFacts {
+    padding-top: 85px;
+    padding-bottom: 165px;
+
+    &-h1 {
+        color: var(--white, #FFF);
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+
+        &-span {
+            color: var(--primary, #C778DD);
+        }
+    }
+
+    &-bottom {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 26px;
+
+        &-left {
+            align-items: self-start;
+            display: flex;
+            max-width: 42.588rem;
+            flex-wrap: wrap;
+            gap: 1.008rem;
+
+            &-cart {
+                align-items: flex-start;
+                padding: 8px;
+                border: 1px solid var(--gray, #ABB2BF);
+
+                &-p {
+                    color: var(--gray, #ABB2BF);
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+            }
+        }
+
+        &-right {
+
+            &-dots {
+                width: 30px;
+                height: 30px;
+                background-image: url("../../images/dots2.png");
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                position: absolute;
+                margin-left: -260px;
+                margin-top: 15px;
+            }
+
+            &-img {
+                width: 113px;
+                height: 113px;
+                position: absolute;
+                margin-top: 80px;
+                margin-left: -150px;
+            }
+
+            &-dots2 {
+                width: 103px;
+                height: 103px;
+                background-image: url("../../images/Dots.png");
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: absolute;
+                margin-top: 150px;
+                margin-left: 100px;
+            }
+        }
+    }
+}
