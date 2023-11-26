@@ -1,0 +1,23 @@
+.projects {
+    margin-top: 80px;
+
+    &-h1 {
+        color: #FFF;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+
+        &-span {
+            color: var(--primary, #C778DD);
+        }
+    }
+
+    &-p {
+        color: #FFF;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+}
