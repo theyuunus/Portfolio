@@ -12,6 +12,7 @@ export default function AboutFacts() {
           </h1>
           <div className="AboutFacts-bottom">
             <div className="AboutFacts-bottom-left">
+              <div className="AboutFacts-bottom-left-backImg"></div>
               <div className="AboutFacts-bottom-left-cart">
                 <p className="AboutFacts-bottom-left-cart-p">
                   I like summer more than winter
