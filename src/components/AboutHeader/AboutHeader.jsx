@@ -17,6 +17,7 @@ export default function AboutHeader() {
                     </div>
                     <div className="AboutHeader-bottom">
                         <div className="AboutHeader-bottom-right">
+                            <div className="AboutHeader-bottom-right-backImg"></div>
                             <p className="AboutHeader-bottom-right-p">
                                 Hello, i’m Yunus!
 

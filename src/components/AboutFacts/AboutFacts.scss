@@ -26,6 +26,14 @@
             flex-wrap: wrap;
             gap: 1.008rem;
 
+            &-backImg {
+                position: absolute;
+                width: 150px;
+                height: 150px;
+                border: 1px solid var(--gray, #ABB2BF);
+                margin-left: -310px;
+            }
+
             &-cart {
                 align-items: flex-start;
                 padding: 8px;
