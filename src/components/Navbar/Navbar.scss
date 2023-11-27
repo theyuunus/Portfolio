@@ -2,6 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background: var(--background, #282C33);
     padding-top: 32px;
 
     .active {
@@ -10,6 +11,7 @@
     }
 
     &-left {
+
         &-a {
             display: flex;
             gap: 8px;
@@ -53,7 +55,7 @@
 
 .media {
     left: 6rem;
-    position: absolute;
+    position: fixed;
     top: 0;
 
     &-top {
@@ -83,7 +85,6 @@
     }
 }
 
-/* Mobile Menu Styles */
 .mobile__menu {
     display: none;
 
@@ -99,6 +100,7 @@
     align-items: center;
     flex-direction: column;
     align-items: self-start;
+    background: var(--background, #282C33);
     row-gap: 2rem;
     justify-content: center;
     padding-bottom: 70px;
