@@ -10,7 +10,6 @@
     }
 
     &-left {
-
         &-a {
             display: flex;
             gap: 8px;
@@ -24,9 +23,7 @@
             &-h2 {
                 color: var(--white, #FFF);
                 font-size: 20px;
-                font-style: normal;
                 font-weight: 700;
-                line-height: normal;
             }
         }
     }
@@ -39,7 +36,6 @@
         &-a {
             color: var(--gray, #ABB2BF);
             font-size: 16px;
-            font-style: normal;
             font-weight: 400;
             line-height: normal;
             transition: all 0.3s;
@@ -51,7 +47,6 @@
 
         &-a:hover {
             color: var(--white, #FFF);
-            transition: all 0.3s;
         }
     }
 }
@@ -69,7 +64,6 @@
     }
 
     &-bottom {
-
         &-a {
             display: block;
             color: rgba(171, 178, 191, 1);
@@ -86,5 +80,90 @@
             color: var(--white, #FFF);
             transition: 0.4s;
         }
+    }
+}
+
+/* Mobile Menu Styles */
+.mobile__menu {
+    display: none;
+
+    &__active {
+        display: block;
+    }
+}
+
+.menu {
+    width: 360px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-items: self-start;
+    row-gap: 2rem;
+    justify-content: center;
+    padding-bottom: 70px;
+
+    &-a {
+        color: var(--gray, #ABB2BF);
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        padding-left: 30px;
+
+        &-span {
+            color: var(--primary, #C778DD);
+        }
+    }
+}
+
+.menu__active {
+    display: block;
+}
+
+.navbar_mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 865px) {
+    .container {
+        width: 90%;
+        margin: auto;
+    }
+
+    .media {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 590px) {
+    .navbar-right-a {
+        display: none;
+    }
+
+    .mobile__menu {
+        display: block;
+    }
+
+    .navbar_mobile {
+        display: block;
+    }
+
+    .media {
+        display: none;
+    }
+
+    .navigation {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9999;
+        display: none;
+    }
+
+    .menu__active {
+        display: block;
     }
 }
