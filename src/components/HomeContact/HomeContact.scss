@@ -64,3 +64,21 @@
         }
     }
 }
+
+@media only screen and (max-width: 1202px) {
+    .HomeContact-bottom {
+        display: block;
+        width: 60%;
+        margin: auto;
+    }
+
+    .HomeContact-bottom-right {
+        margin-top: 50px;
+    }
+}
+
+@media only screen and (max-width: 390px){
+    .HomeContact-bottom-left-p{
+        width: auto;
+    }
+}
