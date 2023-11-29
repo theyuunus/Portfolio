@@ -33,20 +33,13 @@ export default function Navbar() {
             </div>
 
             <div className="navbar-right">
-              <NavLink to={"/"} className="navbar-right-a">
-                <span className="navbar-right-a-span">#</span>home
-              </NavLink>
-              <NavLink to={"works"} className="navbar-right-a">
-                <span className="navbar-right-a-span">#</span>works
-              </NavLink>
-              <NavLink to={"/about"} className="navbar-right-a">
-                <span className="navbar-right-a-span">#</span>about-me
-              </NavLink>
-              <NavLink to={"/contact"} className="navbar-right-a">
-                <span className="navbar-right-a-span">#</span>contacts
-              </NavLink>
+              {['home', 'works', 'about', 'contact'].map((page) => (
+                <NavLink key={page} to={`/${page}`} className="navbar-right-a">
+                  <span className="navbar-right-a-span">#</span>{page}
+                </NavLink>
+              ))}
               <span className="mobile__menu">
-                <i onClick={(e) => { e.stopPropagation(); toggleMenu(); }}>
+                <i onClick={toggleMenu} role="button" aria-label="Toggle Menu">
                   {isMenuActive ? (
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                       <rect width="1" height="1" transform="matrix(1 0 0 -1 11 12)" fill="#D9D9D9" />
@@ -68,18 +61,11 @@ export default function Navbar() {
         <div className="navbar_mobile">
           <div className="navigation" ref={menuRef} onClick={closeMenu}>
             <div className="menu">
-              <NavLink to={"/"} className="menu-a" onClick={closeMenu}>
-                <span className="menu-a-span">#</span>home
-              </NavLink>
-              <NavLink to={"works"} className="menu-a" onClick={closeMenu}>
-                <span className="menu-a-span">#</span>works
-              </NavLink>
-              <NavLink to={"/about"} className="menu-a" onClick={closeMenu}>
-                <span className="menu-a-span">#</span>about-me
-              </NavLink>
-              <NavLink to={"/contact"} className="menu-a" onClick={closeMenu}>
-                <span className="menu-a-span">#</span>contacts
-              </NavLink>
+              {['home', 'works', 'about', 'contact'].map((page) => (
+                <NavLink key={page} to={`/${page}`} className="menu-a" onClick={closeMenu}>
+                  <span className="menu-a-span">#</span>{page}
+                </NavLink>
+              ))}
             </div>
           </div>
         </div>
