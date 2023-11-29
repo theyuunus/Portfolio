@@ -96,3 +96,32 @@
         }
     }
 }
+
+@media only screen and (max-width: 1202px) {
+    .homeHeader-top {
+        display: block;
+        padding-top: 65px;
+    }
+
+    a {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 390px) {
+
+    .homeHeader-top-right-img {
+        width: 200px;
+        height: 250px;
+        margin: 0 50px auto;
+    }
+
+    .homeHeader-top-right-div {
+        width: 310px;
+        margin: auto;
+    }
+
+    .homeHeader-top-right-round {
+        margin-left: 0px;
+    }
+}

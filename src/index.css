@@ -16,13 +16,24 @@ body {
   margin: auto;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
-.main{
+.main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   min-height: 100vh;
+}
+
+@media only screen and (max-width: 390px) {
+  body {
+    margin: 0 16px auto;
+  }
+
+  .container {
+    width: 90%;
+    margin: auto;
+  }
 }

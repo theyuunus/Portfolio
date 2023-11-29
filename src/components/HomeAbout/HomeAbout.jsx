@@ -10,16 +10,16 @@ export default function HomeAbout() {
     }
     return (
         <div className="container">
+            <div className="HomeAbout-left-top">
+                <h1 className="HomeAbout-left-top-h1">
+                    <span className="HomeAbout-left-top-h1-span">#</span>about-me
+                </h1>
+                <div>
+                    <div className="HomeAbout-left-top-line"></div>
+                </div>
+            </div>
             <div className="HomeAbout">
                 <div className="HomeAbout-left">
-                    <div className="HomeAbout-left-top">
-                        <h1 className="HomeAbout-left-top-h1">
-                            <span className="HomeAbout-left-top-h1-span">#</span>about-me
-                        </h1>
-                        <div>
-                            <div className="HomeAbout-left-top-line"></div>
-                        </div>
-                    </div>
                     <div className="HomeAbout-left-middle">
                         <div className="HomeAbout-left-middle-backImg">
 

@@ -2,7 +2,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 112px;
 
     &-left {
 
@@ -10,6 +9,7 @@
             display: flex;
             align-items: center;
             gap: 16px;
+            padding-top: 112px;
 
             &-h1 {
                 color: var(--white, #FFF);
@@ -97,4 +97,26 @@
             margin-left: 464px;
         }
     }
+}
+
+@media only screen and (max-width: 1202px) {
+    .HomeAbout {
+        display: block;
+        padding-top: 65px;
+    }
+}
+
+@media only screen and (max-width: 390px) {
+
+    .HomeAbout-left-top-line {
+        width: 100px;
+    }
+
+    .HomeAbout-left-middle-p {
+        width: auto;
+    }
+
+        .HomeAbout-right-dots3{
+            margin-left: 0px;
+        }
 }

@@ -6,15 +6,15 @@ export default function HomeSkills() {
     return (
         <React.Fragment>
             <div className="container">
-                <div className="HomeSkills">
-                    <div className="HomeAbout-left-top">
-                        <h1 className="HomeAbout-left-top-h1">
-                            <span className="HomeAbout-left-top-h1-span">#</span>skills
-                        </h1>
-                        <div>
-                            <div className="HomeAbout-left-top-line"></div>
-                        </div>
+                <div className="HomeAbout-left-top">
+                    <h1 className="HomeAbout-left-top-h1">
+                        <span className="HomeAbout-left-top-h1-span">#</span>skills
+                    </h1>
+                    <div>
+                        <div className="HomeAbout-left-top-line"></div>
                     </div>
+                </div>
+                <div className="HomeSkills">
                     <div className="HomeSkills-bottom">
                         <div className="HomeSkills-bottom-left">
                             <div className="HomeSkills-bottom-left-topDiv">
