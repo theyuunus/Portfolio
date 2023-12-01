@@ -83,3 +83,29 @@
         }
     }
 }
+
+@media only screen and (max-width: 965px) {
+    .contact-middle {
+        display: block;
+    }
+
+    .contact-middle-right {
+        padding-top: 50px;
+    }
+
+    .contact-bottom-backImg {
+        margin-left: 450px;
+    }
+}
+
+@media only screen and (max-width: 683px) {
+    .contact-bottom-backImg {
+        margin-left: 300px;
+    }
+}
+
+@media only screen and (max-width: 390px) {
+    .contact-bottom-backImg {
+        display: none;
+    }
+}
