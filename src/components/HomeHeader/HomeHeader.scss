@@ -125,3 +125,13 @@
         margin-left: 0px;
     }
 }
+
+@media only screen and (max-width: 320px) {
+    .homeHeader-top-right-img {
+        margin: none;
+    }
+
+    .homeHeader-top-right-div{
+        width: 250px;
+    }
+}
