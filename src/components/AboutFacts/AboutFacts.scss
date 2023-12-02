@@ -85,3 +85,15 @@
         }
     }
 }
+
+@media only screen and (max-width: 1237px) {
+    .AboutFacts-bottom-right-dots {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 869px) {
+    .AboutFacts-bottom-right-img {
+        display: none;
+    }
+}
