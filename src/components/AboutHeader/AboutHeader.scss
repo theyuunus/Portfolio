@@ -87,3 +87,25 @@
         }
     }
 }
+
+@media only screen and (max-width: 1175px) {
+    .AboutHeader-bottom-right-p {
+        width: auto;
+    }
+}
+
+@media only screen and (max-width: 1015px) {
+    .AboutHeader-bottom {
+        display: block;
+        justify-content: center;
+    }
+
+    .AboutHeader-bottom-left-img {
+        padding-top: 50px;
+    }
+
+    .AboutHeader-bottom-left {
+        width: 339px;
+        margin: auto;
+    }
+}
