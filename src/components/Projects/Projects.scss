@@ -1,23 +1,102 @@
 .projects {
     margin-top: 80px;
+    margin-bottom: 81px;
 
-    &-h1 {
-        color: #FFF;
-        font-size: 32px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: normal;
+    &-header {
 
-        &-span {
-            color: var(--primary, #C778DD);
+        &-top {
+
+            &-h1 {
+                color: #FFF;
+                font-size: 32px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+
+                &-span {
+                    color: var(--primary, #C778DD);
+                }
+            }
+
+            &-p {
+                color: #FFF;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+        }
+
+        &-bottom {
+            padding-top: 68px;
+            padding-bottom: 50px;
+
+            &-h1 {
+                color: var(--white, #FFF);
+                font-size: 35px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+
+                &-span {
+                    color: var(--primary, #C778DD);
+                }
+            }
         }
     }
 
-    &-p {
-        color: #FFF;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
+    &-cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+
+        &-card {
+            height: auto;
+            border: 1px solid var(--gray, #ABB2BF);
+
+            &-img {
+                width: 342.5px;
+                height: 201px;
+            }
+
+            &-h3 {
+                color: var(--gray, #ABB2BF);
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                padding: 8px;
+                align-items: flex-start;
+                align-self: stretch;
+                border-bottom: 1px solid rgba(171, 178, 191, 1);
+            }
+
+            &-bottom {
+                padding: 16px;
+
+                &-h1 {
+                    color: var(--white, #FFF);
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    padding-bottom: 16px;
+                }
+
+                &-p {
+                    color: var(--gray, #ABB2BF);
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+
+                &-buttons {
+                    display: flex;
+                    gap: 16px;
+                    padding-top: 16px;
+                }
+            }
+        }
     }
 }

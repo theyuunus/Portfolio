@@ -1,15 +1,14 @@
 import React from 'react'
 import "./ButtonDemo.scss"
 
-export default function ButtonDemo(props) {
-    const { url, text } = props;
+export default function ButtonDemo({ link, text }) {
   return (
-    <div>
-          <a href={url} target='_blank' rel="noopener noreferrer">
-              <button>
-                  {text}
-              </button>
-          </a>
+    <div className='buttonDemo'>
+      <a className='buttonDemo-a' href={link} target='_blank' rel="noopener noreferrer">
+        <button className='buttonDemo-a-button'>
+          {text}
+        </button>
+      </a>
     </div>
   )
 }

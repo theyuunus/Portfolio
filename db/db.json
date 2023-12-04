@@ -1,0 +1,21 @@
+{
+  "works": [
+    {
+      "id": 1,
+      "img": "1.jpg",
+      "languages": "HTML CSS Webpack",
+      "title": "Flag Of Countries",
+      "text": "Find your flag",
+      "live": "https://yunus-flag-of-countries.netlify.app/",
+      "codes": "https://github.com/theyuunus/Flag-of-Countries"
+    },
+    {
+        "id": 2,
+        "img":"2.jpg",
+        "languages": "React SCSS JSON-SERVER",
+        "title": "Rent A Car Service",
+        "text": "Find your best a car",
+        "codes": "https://github.com/theyuunus/Rent-A-Car-Service"
+    }
+  ]
+}

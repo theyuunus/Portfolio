@@ -1,8 +1,8 @@
-div {
+.buttonLive {
 
-    a {
+    &-a {
 
-        button {
+        &-button {
             display: inline-flex;
             padding: 8px 16px;
             align-items: flex-start;
@@ -18,7 +18,7 @@ div {
             transition: 0.2s;
         }
 
-        button:hover {
+        &-button:hover {
             background: rgba(199, 120, 221, 0.20);
             transition: 0.2s;
         }
