@@ -23,8 +23,8 @@ export default function AboutSkills() {
                             <p className="HomeSkills-bottom-right-div2-p">VSCode Figma Git (GitHub & GitLab) Font Awesome Canva</p>
                         </div>
                         <div className="HomeSkills-bottom-right-div2">
-                            <h3 className="HomeSkills-bottom-right-div2-h3">Databases</h3>
-                            <p className="HomeSkills-bottom-right-div2-p">SQLite PostgreSQL Mongo</p>
+                            <h3 className="HomeSkills-bottom-right-div2-h3">Foreign languages</h3>
+                            <p className="HomeSkills-bottom-right-div2-p">Uzbek (native) English (A2) Russia (A2)</p>
                         </div>
                         <div className="HomeSkills-bottom-right-div4">
                             <h3 className="HomeSkills-bottom-right-div4-h3">Frameworks</h3>
