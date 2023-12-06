@@ -73,10 +73,10 @@ export default function Navbar() {
         <div className="media">
           <div className="media-top"></div>
           <div className="media-bottom">
-            <a className="media-bottom-a" href="https://github.com/theyuunus" target='_blank'>
+            <a className="media-bottom-a" href="https://github.com/theyuunus" target='_blank' rel="noopener noreferrer">
               <FaGithub className="media-bottom-a-icon" />
             </a>
-            <a className="media-bottom-a" href="https://t.me/theyuunus" target='_blank'>
+            <a className="media-bottom-a" href="https://t.me/theyuunus" target='_blank' rel="noopener noreferrer">
               <FaTelegram className="media-bottom-a-icon" />
             </a>
           </div>
