@@ -51,6 +51,7 @@
         gap: 20px;
 
         &-card {
+            max-width: 340.5px;
             margin: auto;
             border: 1px solid var(--gray, #ABB2BF);
 
@@ -109,5 +110,26 @@
                 }
             }
         }
+    }
+}
+
+@media only screen and (max-width: 1383px) {
+    .projects-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 765px) {
+    .projects-cards {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .projects-cards-card-images-img {
+        width: 290px;
+        height: 190px;
     }
 }
