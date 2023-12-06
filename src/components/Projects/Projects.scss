@@ -128,8 +128,18 @@
 }
 
 @media only screen and (max-width: 400px) {
+    .projects-cards-card {
+        max-width: 271px;
+    }
+
     .projects-cards-card-images-img {
-        width: 290px;
+        max-width: 270px;
         height: 190px;
+    }
+
+    .projects-cards-card-bottom-buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
     }
 }
