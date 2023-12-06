@@ -10,12 +10,47 @@
       "codes": "https://github.com/theyuunus/Flag-of-Countries"
     },
     {
-        "id": 2,
-        "img":"2.jpg",
-        "languages": "React SCSS JSON-SERVER",
-        "title": "Rent A Car Service",
-        "text": "Find your best a car",
-        "codes": "https://github.com/theyuunus/Rent-A-Car-Service"
+      "id": 2,
+      "img": "2.jpg",
+      "languages": "REACT SCSS JSON-SERVER",
+      "title": "Rent A Car Service",
+      "text": "Find your best a car",
+      "codes": "https://github.com/theyuunus/Rent-A-Car-Service"
+    },
+    {
+      "id": 3,
+      "img": "3.jpg",
+      "languages": "REACT CSS",
+      "title": "Netflix Clone (One Page)",
+      "text": "If you want to see movie, you can find from this website",
+      "codes": "https://github.com/theyuunus/Netfilx-Clone"
+    },
+    {
+      "id": 4,
+      "img": "4.jpg",
+      "languages": "HTML CSS",
+      "title": "My Old Portfolio Website",
+      "text": "You can use my old portfolio",
+      "live": "https://theyuunus-old-portfolio.netlify.app/",
+      "codes": "https://github.com/theyuunus/my-porfolio"
+    },
+    {
+      "id": 5,
+      "img": "5.jpg",
+      "languages": "REACT SCSS JSON-SERVER",
+      "title": "My New Portfolio Website",
+      "text": "You can use it",
+      "live": "theyuunus.netlify.app/",
+      "codes": "https://github.com/theyuunus/Portfolio"
+    },
+    {
+      "id": 6,
+      "img": "6.jpg",
+      "languages": "HTML CSS",
+      "title": "Hotel",
+      "text": "You can book some room.",
+      "live": "https://my-hotel-web-site.netlify.app/",
+      "codes": "https://github.com/theyuunus/Hotel"
     }
   ]
 }

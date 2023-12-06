@@ -3,6 +3,7 @@ import "./Projects.scss"
 import axios from 'axios'
 import ButtonLive from "../ButtonLive/ButtonLive"
 import ButtonDemo from '../ButtonDemo/ButtonDemo'
+import NotFound from "../../images/404.png"
 
 export default function Projects() {
     const [work, setWork] = useState(null)
@@ -42,15 +43,17 @@ export default function Projects() {
                         {work ? (
                             work.map((work) => (
                                 <div className="projects-cards-card" key={work.id}>
-                                    <img
-                                        className="projects-cards-card-img"
-                                        src={
-                                            work.img.startsWith(work.id)
-                                                ? process.env.PUBLIC_URL + "/images/" + work.img
-                                                : work.img
-                                        }
-                                        alt=""
-                                    />
+                                    <div className="projects-cards-card-images">
+                                        <img
+                                            className="projects-cards-card-images-img"
+                                            src={work.img && work.img.length > 0 ? (
+                                                work.img.startsWith(work.id)
+                                                    ? process.env.PUBLIC_URL + "/images/" + work.img
+                                                    : work.img
+                                            ) : NotFound}
+                                            alt=""
+                                        />
+                                    </div>
                                     <h3 className="projects-cards-card-h3">{work.languages}</h3>
                                     <div className="projects-cards-card-bottom">
                                         <h1 className="projects-cards-card-bottom-h1">{work.title}</h1>
