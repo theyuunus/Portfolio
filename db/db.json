@@ -52,5 +52,15 @@
       "live": "https://my-hotel-web-site.netlify.app/",
       "codes": "https://github.com/theyuunus/Hotel"
     }
+  ],
+
+  "smallWroks": [
+    {
+      "id": 1,
+      "languages": "HTML CSS JAVASCRIPT",
+      "title": "Dowload Photo From URL",
+      "text": "if you want to dowload any one photo, you can dowload from URL",
+      "codes": "https://github.com/theyuunus/dowload_photo"
+    }
   ]
 }
