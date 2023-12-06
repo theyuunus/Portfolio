@@ -48,15 +48,26 @@
     &-cards {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 16px;
+        gap: 20px;
 
         &-card {
-            height: auto;
+            margin: auto;
             border: 1px solid var(--gray, #ABB2BF);
 
-            &-img {
-                width: 342.5px;
-                height: 201px;
+            &-images {
+                overflow: hidden;
+
+                &-img {
+                    width: 339.5px;
+                    height: 200px;
+                    object-fit: cover;
+                    transition: all .3s linear;
+                }
+
+                &-img:hover {
+                    transform: scale(1.2);
+                    transition: all .3s linear;
+                }
             }
 
             &-h3 {
