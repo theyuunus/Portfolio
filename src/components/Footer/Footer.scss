@@ -19,6 +19,12 @@
                     font-style: normal;
                     font-weight: 400;
                     line-height: normal;
+                    transition: 1s;
+                }
+
+                &-a:hover {
+                    color: var(--white, #FFF);
+                    transition: 1s;
                 }
             }
 
@@ -79,7 +85,7 @@
         height: 35px;
     }
 
-    .footer-top-left-div{
+    .footer-top-left-div {
         display: block;
     }
 }
