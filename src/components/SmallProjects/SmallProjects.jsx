@@ -47,8 +47,8 @@ export default function SmallProjects() {
                                 </div>
                             ))
                         ) : (
-                            <div>
-                                <h1>
+                            <div className="smallProjects-cards-div">
+                                <h1 className="smallProjects-cards-div-h1">
                                     Loading...
                                 </h1>
                             </div>

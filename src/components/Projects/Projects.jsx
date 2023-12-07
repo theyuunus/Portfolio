@@ -42,7 +42,7 @@ export default function Projects() {
                     <div className="projects-cards">
                         {work ? (
                             work.map((work) => (
-                                <div style={{alignItems: "start"}}>
+                                <div style={{ alignItems: "start" }}>
                                     <div className="projects-cards-card" key={work.id}>
                                         <div className="projects-cards-card-images">
                                             <img
@@ -72,7 +72,11 @@ export default function Projects() {
                                 </div>
                             ))
                         ) : (
-                            <div>Loading...</div>
+                            <div className="projects-cards-div">
+                                <h1 className="projects-cards-div-h1">
+                                    Loading...
+                                </h1>
+                            </div>
                         )
                         }
                     </div>
