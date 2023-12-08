@@ -34,17 +34,16 @@
             &-backImg {
                 width: 155px;
                 height: 155px;
-                background-image: url("../../images/semi-rectangul.png");
-                background-repeat: no-repeat;
+                border: 1px solid var(--gray, #ABB2BF);
+                background-repeat: repeat;
                 position: absolute;
-                margin-left: -230px;
+                margin-left: -300px;
                 margin-top: 90px;
             }
 
             &-p {
                 width: 515px;
                 color: var(--gray, #ABB2BF);
-                font-family: Fira Code;
                 font-size: 16px;
                 font-style: normal;
                 font-weight: 400;
@@ -116,13 +115,13 @@
         width: auto;
     }
 
-        .HomeAbout-right-dots3{
-            margin-left: 0px;
-        }
+    .HomeAbout-right-dots3 {
+        margin-left: 0px;
+    }
 }
 
 @media only screen and (max-width: 320px) {
-    .HomeAbout-right-img{
+    .HomeAbout-right-img {
         width: 280px;
         height: 450px;
     }
