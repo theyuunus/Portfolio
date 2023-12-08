@@ -3,6 +3,7 @@ import "./HomeProjects.scss"
 import { NavLink } from 'react-router-dom'
 import axios from 'axios'
 import ButtonLive from "../ButtonLive/ButtonLive"
+import ButtonDemo from "../ButtonDemo/ButtonDemo"
 
 export default function HomeProjects() {
     const [projects, setProjects] = useState(null)
@@ -12,7 +13,7 @@ export default function HomeProjects() {
             try {
                 const response = await axios.get(`http://localhost:4040/works`)
                 const data = response.data
-                setProjects()
+                setProjects(data)
             } catch (error) {
                 console.error(error)
             }
@@ -42,27 +43,30 @@ export default function HomeProjects() {
                         <div className='homeProjects-cards-card'>
                             {
                                 projects ? (
-                                    projects.map((projects) => {
+                                    projects.map((project) => {
                                         <div style={{ alignItems: "start" }}>
-                                            <div className="projects-cards-card" key={projects.id}>
+                                            <div className="projects-cards-card" key={project.id}>
                                                 <div className="projects-cards-card-images">
                                                     <img
                                                         className="projects-cards-card-images-img"
-                                                        src={projects.img && projects.img.length > 0 ? (
-                                                            projects.img.startsWith(projects.id)
-                                                                ? process.env.PUBLIC_URL + "/images/" + projects.img
-                                                                : projects.img
-                                                        ) : projects }
+                                                        src={project.img && project.img.length > 0 ? (
+                                                            project.img.startsWith(project.id)
+                                                                ? process.env.PUBLIC_URL + "/images/" + project.img
+                                                                : project.img
+                                                        ) : project}
                                                         alt=""
                                                     />
                                                 </div>
-                                                <h3 className="projects-cards-card-h3">{projects.languages}</h3>
+                                                <h3 className="projects-cards-card-h3">{project.languages}</h3>
                                                 <div className="projects-cards-card-bottom">
-                                                    <h1 className="projects-cards-card-bottom-h1">{projects.title}</h1>
-                                                    <p className="projects-cards-card-bottom-p">{projects.text}</p>
+                                                    <h1 className="projects-cards-card-bottom-h1">{project.title}</h1>
+                                                    <p className="projects-cards-card-bottom-p">{project.text}</p>
                                                     <div className="projects-cards-card-bottom-buttons">
-                                                        {projects.live && projects.live.length > 0 ? (
-                                                            <ButtonLive text={"Live <~>"} link={projects.live ? projects.live : null} />
+                                                        {project.live && project.live.length > 0 ? (
+                                                            <ButtonLive text={"Live <~>"} link={project.live ? project.live : null} />
+                                                        ) : null}
+                                                        {project.codes && project.codes.length > 0 ? (
+                                                            <ButtonDemo text={"Cached >="} link={project.codes} />
                                                         ) : null}
                                                     </div>
                                                 </div>
@@ -74,7 +78,7 @@ export default function HomeProjects() {
                                         <h1>Loading...</h1>
                                     </div>
                                 )
-}
+                            }
                         </div>
                     </div>
                 </div>
