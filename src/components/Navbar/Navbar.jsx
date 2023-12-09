@@ -58,7 +58,7 @@ export default function Navbar() {
                       <rect width="24" height="2" fill="#D9D9D9" />
                       <rect x="9" y="12" width="15" height="2" fill="#D9D9D9" />
                     </svg>
-                  )}
+             
                 </i>
               </span>
             </div>
@@ -68,27 +68,7 @@ export default function Navbar() {
         <div className="navbar_mobile">
           <div className="navigation" ref={menuRef} onClick={closeMenu}>
             <div className="menu">
-              <NavLink to={"/"} className="menu-a" onClick={closeMenu}>
-                <span className="menu-a-span">#</span>home
-              </NavLink>
-              <NavLink to={"works"} className="menu-a" onClick={closeMenu}>
-                <span className="menu-a-span">#</span>works
-              </NavLink>
-              <NavLink to={"/about"} className="menu-a" onClick={closeMenu}>
-                <span className="menu-a-span">#</span>about-me
-              </NavLink>
-              <NavLink to={"/contact"} className="menu-a" onClick={closeMenu}>
-                <span className="menu-a-span">#</span>contacts
-              </NavLink>
 
-              <div className="menu-media">
-                <a className="media-bottom-a" href="https://github.com/theyuunus" target='_blank'>
-                  <FaGithub className="media-bottom-a-icon" />
-                </a>
-                <a className="media-bottom-a" href="https://t.me/theyuunus" target='_blank'>
-                  <FaTelegram className="media-bottom-a-icon" />
-                </a>
-              </div>
             </div>
           </div>
         </div>
