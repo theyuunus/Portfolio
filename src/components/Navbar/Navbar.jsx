@@ -33,17 +33,32 @@ export default function Navbar() {
             </div>
 
             <div className="navbar-right">
-              {['home', 'works', 'about', 'contact'].map((page) => (
-                <NavLink key={page} to={`/${page}`} className="navbar-right-a">
-                  <span className="navbar-right-a-span">#</span>{page}
-                </NavLink>
-              ))}
+              <NavLink to={"/"} className="navbar-right-a">
+                <span className="navbar-right-a-span">#</span>home
+              </NavLink>
+              <NavLink to={"works"} className="navbar-right-a">
+                <span className="navbar-right-a-span">#</span>works
+              </NavLink>
+              <NavLink to={"/about"} className="navbar-right-a">
+                <span className="navbar-right-a-span">#</span>about-me
+              </NavLink>
+              <NavLink to={"/contact"} className="navbar-right-a">
+                <span className="navbar-right-a-span">#</span>contacts
+              </NavLink>
               <span className="mobile__menu">
                 <i onClick={toggleMenu} role="button" aria-label="Toggle Menu">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                    <rect width="24" height="2" fill="#D9D9D9" />
-                    <rect x="9" y="12" width="15" height="2" fill="#D9D9D9" />
-                  </svg>
+                  {isMenuActive ? (
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                      <rect width="1" height="1" transform="matrix(1 0 0 -1 11 12)" fill="#D9D9D9" />
+                      <rect x="3" y="19.9706" width="24" height="2" transform="rotate(-45 3 19.9706)" fill="#D9D9D9" />
+                      <rect x="4" y="3" width="24" height="2" transform="rotate(45 4 3)" fill="#D9D9D9" />
+                    </svg>
+                  ) : (
+                    <svg className="mobile__menu-close" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                      <rect width="24" height="2" fill="#D9D9D9" />
+                      <rect x="9" y="12" width="15" height="2" fill="#D9D9D9" />
+                    </svg>
+             
                 </i>
               </span>
             </div>
@@ -53,18 +68,7 @@ export default function Navbar() {
         <div className="navbar_mobile">
           <div className="navigation" ref={menuRef} onClick={closeMenu}>
             <div className="menu">
-              <i onClick={toggleMenu} role="button" aria-label="Toggle Menu" className="menu-close">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                  <rect width="1" height="1" transform="matrix(1 0 0 -1 11 12)" fill="#D9D9D9" />
-                  <rect x="3" y="19.9706" width="24" height="2" transform="rotate(-45 3 19.9706)" fill="#D9D9D9" />
-                  <rect x="4" y="3" width="24" height="2" transform="rotate(45 4 3)" fill="#D9D9D9" />
-                </svg>
-              </i>
-              {['home', 'works', 'about', 'contact'].map((page) => (
-                <NavLink key={page} to={`/${page}`} className="menu-a" onClick={closeMenu}>
-                  <span className="menu-a-span">#</span>{page}
-                </NavLink>
-              ))}
+
             </div>
           </div>
         </div>

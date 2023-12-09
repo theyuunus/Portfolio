@@ -103,7 +103,8 @@
     background: var(--background, #282C33);
     row-gap: 2rem;
     justify-content: center;
-    padding-bottom: 70px;
+    // padding-bottom: 70px;
+    padding-top: 140px;
 
     &-a {
         color: var(--gray, #ABB2BF);
@@ -118,10 +119,11 @@
         }
     }
 
-    &-close {
-        padding-bottom: 460px;
-        padding-left: 310px;
-        position: absolute;
+
+    &-media {
+        display: flex;
+        gap: 15px;
+        margin: auto;
     }
 }
 
@@ -131,6 +133,7 @@
 
 .navbar_mobile {
     display: none;
+
 }
 
 @media only screen and (max-width: 865px) {

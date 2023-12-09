@@ -85,3 +85,27 @@
         }
     }
 }
+
+@media only screen and (max-width: 1237px) {
+    .AboutFacts-bottom-right-dots,
+    .AboutFacts-bottom-right-dots2 {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 869px) {
+    .AboutFacts-bottom-right-img {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 371px){
+    .AboutHeader-bottom-left-img{
+        width: 250px;
+        height: 450px;
+    }
+
+    .AboutHeader-bottom-left-dots2{
+        display: none;
+    }
+}
