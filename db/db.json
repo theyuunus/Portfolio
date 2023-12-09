@@ -2,7 +2,15 @@
   "works": [
     {
       "id": 1,
-      "img": "1.jpg",
+      "img": "",
+      "languages": "REACT SCSS I18",
+      "title": "Portfolio for Compony",
+      "text": "I'm currently working on this website",
+      "codes": "https://github.com/Web-Coders-uz/web-coders-portfolio"
+    },
+    {
+      "id": 2,
+      "img": "2.jpg",
       "languages": "HTML CSS Webpack",
       "title": "Flag Of Countries",
       "text": "Find your flag",
@@ -10,16 +18,16 @@
       "codes": "https://github.com/theyuunus/Flag-of-Countries"
     },
     {
-      "id": 2,
-      "img": "2.jpg",
+      "id": 3,
+      "img": "3.jpg",
       "languages": "REACT SCSS JSON-SERVER",
       "title": "Rent A Car Service",
       "text": "Find your best a car",
       "codes": "https://github.com/theyuunus/Rent-A-Car-Service"
     },
     {
-      "id": 3,
-      "img": "3.jpg",
+      "id": 4,
+      "img": "4.jpg",
       "languages": "REACT CSS",
       "title": "Netflix Clone (One Page)",
       "text": "If you want to see movie, you can find from this website",
@@ -27,8 +35,8 @@
       "codes": "https://github.com/theyuunus/Netfilx-Clone"
     },
     {
-      "id": 4,
-      "img": "4.jpg",
+      "id": 5,
+      "img": "5.jpg",
       "languages": "HTML CSS",
       "title": "My Old Portfolio Website",
       "text": "You can use my old portfolio",
@@ -36,8 +44,8 @@
       "codes": "https://github.com/theyuunus/my-porfolio"
     },
     {
-      "id": 5,
-      "img": "5.jpg",
+      "id": 6,
+      "img": "6.jpg",
       "languages": "REACT SCSS JSON-SERVER",
       "title": "My New Portfolio Website",
       "text": "You can use it",
@@ -45,8 +53,8 @@
       "codes": "https://github.com/theyuunus/Portfolio"
     },
     {
-      "id": 6,
-      "img": "6.jpg",
+      "id": 7,
+      "img": "7.jpg",
       "languages": "HTML CSS",
       "title": "Hotel",
       "text": "You can book some room.",
@@ -68,9 +76,16 @@
       "id": 2,
       "languages": "HTML CSS JAVASCRIPT",
       "title": "Tasbeeh",
-      "text": "if you want to dowload any one photo, you can dowload from URL",
+      "text": "you can use this website as a Tasbeeh",
       "live": "https://theyuunus-tasbeh.netlify.app/",
       "codes": "https://github.com/theyuunus/tasbeh"
+    },
+    {
+      "id": 3,
+      "languages": "REACT SCSS EmailJS",
+      "title": "Send messages to the email",
+      "text": "you can use source codes",
+      "codes": "https://github.com/theyuunus/send-email"
     }
   ]
 }
