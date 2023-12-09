@@ -72,6 +72,12 @@
     }
 }
 
+@media only screen and (max-width: 656px){
+    .homeProjects-header-left-line {
+            display: none;
+        }
+}
+
 @media only screen and (max-width: 400px) {
     .homeProjects-cards-card {
         max-width: 271px;
@@ -86,11 +92,5 @@
         display: flex;
         flex-direction: column;
         gap: 16px;
-    }
-}
-
-@media only screen and (max-width: 390px) {
-    .homeProjects-header-left-line {
-        width: 50px;
     }
 }
