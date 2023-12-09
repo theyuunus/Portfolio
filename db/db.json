@@ -23,6 +23,7 @@
       "languages": "REACT CSS",
       "title": "Netflix Clone (One Page)",
       "text": "If you want to see movie, you can find from this website",
+      "live": "https://theyuunus-netflix-clone.netlify.app/",
       "codes": "https://github.com/theyuunus/Netfilx-Clone"
     },
     {
@@ -60,7 +61,16 @@
       "languages": "HTML CSS JAVASCRIPT",
       "title": "Dowload Photo From URL",
       "text": "if you want to dowload any one photo, you can dowload from URL",
+      "live": "https://dowload-photo-from-internet.netlify.app/",
       "codes": "https://github.com/theyuunus/dowload_photo"
+    },
+    {
+      "id": 2,
+      "languages": "HTML CSS JAVASCRIPT",
+      "title": "Tasbeeh",
+      "text": "if you want to dowload any one photo, you can dowload from URL",
+      "live": "https://theyuunus-tasbeh.netlify.app/",
+      "codes": "https://github.com/theyuunus/tasbeh"
     }
   ]
 }
