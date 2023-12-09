@@ -42,6 +42,17 @@ export default function HomeHeader() {
               </div>
             </div>
           </div>
+          <div className="homeHeader-quote">
+            <div className="homeHeader-quote-top_quote">
+              <div className="homeHeader-quote-top_quote-back_icon_left"></div>
+              <h1 className="homeHeader-quote-top_quote-h1">
+                Victory comes only from Allah, the Mighty, the Wise
+              </h1>
+              <div style={{ textAlign: "right" }}>
+                <div className="homeHeader-quote-top_quote-back_icon_right"></div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </React.Fragment>
