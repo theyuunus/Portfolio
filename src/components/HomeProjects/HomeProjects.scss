@@ -42,8 +42,39 @@
         }
     }
 
-    &-cards{
+    &-cards {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media only screen and (max-width: 1383px) {
+    .homeProjects-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 765px) {
+    .homeProjects-cards {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .homeProjects-cards-card {
+        max-width: 271px;
+    }
+
+    .projects-cards-card-images-img {
+        max-width: 270px;
+        height: 190px;
+    }
+
+    .projects-cards-card-bottom-buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
     }
 }
