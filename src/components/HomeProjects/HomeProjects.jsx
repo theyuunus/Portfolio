@@ -40,6 +40,7 @@ export default function HomeProjects() {
                         </div>
                     </div>
                     <div className='homeProjects-cards'>
+                        <div className='homeProjects-cards-dots'></div>
                         <div className='homeProjects-cards-card'>
                             {
                                 projects ? (
@@ -80,6 +81,7 @@ export default function HomeProjects() {
                                 )
                             }
                         </div>
+                        <div className='homeProjects-cards-rectangle'></div>
                     </div>
                 </div>
             </div>
