@@ -103,8 +103,12 @@
     background: var(--background, #282C33);
     row-gap: 2rem;
     justify-content: center;
-    // padding-bottom: 70px;
-    padding-top: 140px;
+
+    &-close_svg {
+        top: 30px;
+        right: 30px;
+        position: absolute;
+    }
 
     &-a {
         color: var(--gray, #ABB2BF);
