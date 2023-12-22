@@ -2,6 +2,7 @@ import React, { useRef, useState } from 'react';
 import "./Navbar.scss";
 import Logo from "../../images/Logo.png";
 import { Link, NavLink } from 'react-router-dom';
+import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaTelegram } from "react-icons/fa";
 
@@ -58,7 +59,7 @@ export default function Navbar() {
                       <rect width="24" height="2" fill="#D9D9D9" />
                       <rect x="9" y="12" width="15" height="2" fill="#D9D9D9" />
                     </svg>
-             
+                  )}
                 </i>
               </span>
             </div>
@@ -76,6 +77,9 @@ export default function Navbar() {
         <div className="media">
           <div className="media-top"></div>
           <div className="media-bottom">
+            <a className="media-bottom-a" href="https://www.linkedin.com/in/theyuunus/" target='_blank' rel="noopener noreferrer">
+              <FaLinkedin className="media-bottom-a-icon" />
+            </a>
             <a className="media-bottom-a" href="https://github.com/theyuunus" target='_blank' rel="noopener noreferrer">
               <FaGithub className="media-bottom-a-icon" />
             </a>
