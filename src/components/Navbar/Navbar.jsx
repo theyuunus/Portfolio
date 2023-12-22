@@ -2,6 +2,7 @@ import React, { useRef, useState } from 'react';
 import "./Navbar.scss";
 import Logo from "../../images/Logo.png";
 import { Link, NavLink } from 'react-router-dom';
+import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaTelegram } from "react-icons/fa";
 
@@ -47,10 +48,25 @@ export default function Navbar() {
               </NavLink>
               <span className="mobile__menu">
                 <i onClick={toggleMenu} role="button" aria-label="Toggle Menu">
+
+                  {isMenuActive ? (
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                      <rect width="1" height="1" transform="matrix(1 0 0 -1 11 12)" fill="#D9D9D9" />
+                      <rect x="3" y="19.9706" width="24" height="2" transform="rotate(-45 3 19.9706)" fill="#D9D9D9" />
+                      <rect x="4" y="3" width="24" height="2" transform="rotate(45 4 3)" fill="#D9D9D9" />
+                    </svg>
+                  ) : (
+                    <svg className="mobile__menu-close" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                      <rect width="24" height="2" fill="#D9D9D9" />
+                      <rect x="9" y="12" width="15" height="2" fill="#D9D9D9" />
+                    </svg>
+                  )}
+
                   <svg className="mobile__menu-close" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                     <rect width="24" height="2" fill="#D9D9D9" />
                     <rect x="9" y="12" width="15" height="2" fill="#D9D9D9" />
                   </svg>
+
                 </i>
               </span>
             </div>
@@ -85,6 +101,9 @@ export default function Navbar() {
         <div className="media">
           <div className="media-top"></div>
           <div className="media-bottom">
+            <a className="media-bottom-a" href="https://www.linkedin.com/in/theyuunus/" target='_blank' rel="noopener noreferrer">
+              <FaLinkedin className="media-bottom-a-icon" />
+            </a>
             <a className="media-bottom-a" href="https://github.com/theyuunus" target='_blank' rel="noopener noreferrer">
               <FaGithub className="media-bottom-a-icon" />
             </a>
