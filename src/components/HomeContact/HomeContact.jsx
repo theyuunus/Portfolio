@@ -31,7 +31,7 @@ export default function HomeContact() {
                                 <FaTelegram className="HomeContact-bottom-right-a-icon" />
                                 @theyuunus
                             </a>
-                            <a className="HomeContact-bottom-right-a" href="mailto:obidxojayevbotir@gmail.com" target='_blank' rel="noopener noreferrer">
+                            <a className="HomeContact-bottom-right-a" href="mailto:theyuunus@gmail.com" target='_blank' rel="noopener noreferrer">
                                 <HiOutlineMail className="HomeContact-bottom-right-a-icon" />
                                 theyuunus@gmail.com
                             </a>

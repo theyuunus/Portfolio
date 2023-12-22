@@ -107,33 +107,12 @@
             align-items: flex-start;
             gap: 10px;
 
-            &-back_icon_left {
-                width: 25.472px;
-                height: 20.704px;
-                background-image: url("../../images/“.png");
-                background-repeat: no-repeat;
-                background-size: cover;
-                position: absolute;
-                margin-top: -42px;
-            }
-
             &-h1 {
                 color: #FFF;
                 font-size: 24px;
                 font-style: normal;
                 font-weight: 500;
                 line-height: normal;
-            }
-
-            &-back_icon_right {
-                width: 25.472px;
-                height: 20.704px;
-                background-image: url("../../images/“.png");
-                background-repeat: no-repeat;
-                background-size: cover;
-                position: absolute;
-                bottom: -72px;
-                margin-left: -35px;
             }
         }
     }

@@ -57,6 +57,36 @@ export default function HomeProjects() {
                     </div>
                     <div className='homeProjects-cards'>
                         <div className='homeProjects-cards-dots'></div>
+                        <div className='homeProjects-cards-card'>
+                            {
+                                projects ? (
+                                    projects.map((project) => {
+                                        <div style={{ alignItems: "start" }}>
+                                            <div className="projects-cards-card" key={project.id}>
+                                                <div className="projects-cards-card-images">
+                                                    <img
+                                                        className="projects-cards-card-images-img"
+                                                        src={project.img && project.img.length > 0 ? (
+                                                            project.img.startsWith(project.id)
+                                                                ? process.env.PUBLIC_URL + "/images/" + project.img
+                                                                : project.img
+                                                        ) : project}
+                                                        alt=""
+                                                    />
+                                                </div>
+                                                <h3 className="projects-cards-card-h3">{project.languages}</h3>
+                                                <div className="projects-cards-card-bottom">
+                                                    <h1 className="projects-cards-card-bottom-h1">{project.title}</h1>
+                                                    <p className="projects-cards-card-bottom-p">{project.text}</p>
+                                                    <div className="projects-cards-card-bottom-buttons">
+                                                        {project.live && project.live.length > 0 ? (
+                                                            <ButtonLive text={"Live <~>"} link={project.live ? project.live : null} />
+                                                        ) : null}
+                                                        {project.codes && project.codes.length > 0 ? (
+                                                            <ButtonDemo text={"Cached >="} link={project.codes} />
+                                                        ) : null}
+                                                    </div>
+                                                </div>
                         {work ? (
                             work.slice(0, 6).map((work) => (
                                 <div style={{ alignItems: "start" }}>
@@ -86,6 +116,10 @@ export default function HomeProjects() {
                                             </div>
                                         </div>
                                     </div>
+                                )
+                            }
+                        </div>
+
                                 </div>
                             ))
                         ) : (
