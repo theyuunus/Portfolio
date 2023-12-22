@@ -33,7 +33,7 @@ export default function Contact() {
                                 </a>
                                 <a className="HomeContact-bottom-right-a" href="mailto:obidxojayevbotir@gmail.com" target='_blank' rel="noopener noreferrer">
                                     <HiOutlineMail className="HomeContact-bottom-right-a-icon" />
-                                    obidxojayevbotir@gmail.com
+                                    theyuunus@gmail.com
                                 </a>
                             </div>
                         </div>

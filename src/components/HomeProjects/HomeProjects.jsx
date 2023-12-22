@@ -4,16 +4,32 @@ import { NavLink } from 'react-router-dom'
 import axios from 'axios'
 import ButtonLive from "../ButtonLive/ButtonLive"
 import ButtonDemo from "../ButtonDemo/ButtonDemo"
+import NotFound from "../../images/404.png"
 
 export default function HomeProjects() {
-    const [projects, setProjects] = useState(null)
+    // const [projects, setProjects] = useState(null)
+
+    // useEffect(() => {
+    //     const fetchData = async () => {
+    //         try {
+    //             const response = await axios.get(`http://localhost:4040/works`)
+    //             const data = response.data
+    //             setProjects(data)
+    //         } catch (error) {
+    //             console.error(error)
+    //         }
+    //     }
+    //     fetchData()
+    // }, [])
+
+    const [work, setWork] = useState(null)
 
     useEffect(() => {
         const fetchData = async () => {
             try {
                 const response = await axios.get(`http://localhost:4040/works`)
                 const data = response.data
-                setProjects(data)
+                setWork(data)
             } catch (error) {
                 console.error(error)
             }
@@ -71,16 +87,49 @@ export default function HomeProjects() {
                                                         ) : null}
                                                     </div>
                                                 </div>
+                        {work ? (
+                            work.slice(0, 6).map((work) => (
+                                <div style={{ alignItems: "start" }}>
+                                    <div className="projects-cards-card" key={work.id}>
+                                        <div className="projects-cards-card-images">
+                                            <img
+                                                className="projects-cards-card-images-img"
+                                                src={work.img && work.img.length > 0 ? (
+                                                    work.img.startsWith(work.id)
+                                                        ? process.env.PUBLIC_URL + "/images/" + work.img
+                                                        : work.img
+                                                ) : NotFound}
+                                                alt=""
+                                            />
+                                        </div>
+                                        <h3 className="projects-cards-card-h3">{work.languages}</h3>
+                                        <div className="projects-cards-card-bottom">
+                                            <h1 className="projects-cards-card-bottom-h1">{work.title}</h1>
+                                            <p className="projects-cards-card-bottom-p">{work.text}</p>
+                                            <div className="projects-cards-card-bottom-buttons">
+                                                {work.live && work.live.length > 0 ? (
+                                                    <ButtonLive text={"Live <~>"} link={work.live ? work.live : null} />
+                                                ) : null}
+                                                {work.codes && work.codes.length > 0 ? (
+                                                    <ButtonDemo text={"Cached >="} link={work.codes} />
+                                                ) : null}
                                             </div>
                                         </div>
-                                    })
-                                ) : (
-                                    <div>
-                                        <h1>Loading...</h1>
                                     </div>
                                 )
                             }
                         </div>
+
+                                </div>
+                            ))
+                        ) : (
+                            <div className="projects-cards-div">
+                                <h1 className="projects-cards-div-h1">
+                                    Loading...
+                                </h1>
+                            </div>
+                        )
+                        }
                         <div className='homeProjects-cards-rectangle'></div>
                     </div>
                 </div>

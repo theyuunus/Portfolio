@@ -103,7 +103,12 @@
     background: var(--background, #282C33);
     row-gap: 2rem;
     justify-content: center;
-    padding-bottom: 70px;
+
+    &-close_svg {
+        top: 30px;
+        right: 30px;
+        position: absolute;
+    }
 
     &-a {
         color: var(--gray, #ABB2BF);
@@ -117,6 +122,13 @@
             color: var(--primary, #C778DD);
         }
     }
+
+
+    &-media {
+        display: flex;
+        gap: 15px;
+        margin: auto;
+    }
 }
 
 .menu__active {
@@ -125,6 +137,7 @@
 
 .navbar_mobile {
     display: none;
+
 }
 
 @media only screen and (max-width: 865px) {

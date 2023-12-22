@@ -1,12 +1,11 @@
 import React from 'react'
 import "./ButtonLive.scss"
 
-export default function ButtonLive(props) {
-    const { url, text } = props;
+export default function ButtonLive({ link, text }) {
     return (
-        <div>
-            <a href={url} target='_blank' rel="noopener noreferrer">
-                <button>
+        <div className='buttonLive'>
+            <a className='buttonLive-a' href={link} target='_blank' rel="noopener noreferrer">
+                <button className='buttonLive-a-button'>
                     {text}
                 </button>
             </a>
