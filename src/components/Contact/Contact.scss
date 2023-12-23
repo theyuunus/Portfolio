@@ -50,6 +50,7 @@
         &-media {
             display: flex;
             flex-wrap: wrap;
+            align-items: center;
             gap: 20px;
 
             &-a {
@@ -60,6 +61,11 @@
                 &-icon {
                     width: 35px;
                     height: 35px;
+                }
+
+                &-email_icon{
+                    width: 46px;
+                    height: 46px;
                 }
             }
 

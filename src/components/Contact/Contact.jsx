@@ -2,6 +2,7 @@ import React from 'react'
 import "./Contact.scss"
 import { FaTelegram } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
+import { FaLinkedin } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
@@ -54,11 +55,14 @@ export default function Contact() {
                             <a className="contact-bottom-media-a" href="https://github.com/theyuunus" target='_blank' rel="noopener noreferrer">
                                 <FaGithub className="contact-bottom-media-a-icon" />
                             </a>
+                            <a className="contact-bottom-media-a" href="https://www.linkedin.com/in/theyuunus/" target='_blank' rel="noopener noreferrer">
+                                <FaLinkedin className="contact-bottom-media-a-icon" />
+                            </a>
                             <a className="contact-bottom-media-a" href="https://www.google.com/maps/place/41%C2%B018'41.5%22N+69%C2%B009'18.4%22E" target="_blank" rel="noopener noreferrer">
                                 <FaLocationDot className="contact-bottom-media-a-icon" />
                             </a>
                             <a className="contact-bottom-media-a" href="mailto:obidxojayevbotir@gmail.com" target='_blank' rel="noopener noreferrer">
-                                <HiOutlineMail className="contact-bottom-media-a-icon" />
+                                <HiOutlineMail className="contact-bottom-media-a-email_icon" />
                             </a>
                         </div>
                         <div className="contact-bottom-backImg"></div>
