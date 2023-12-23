@@ -2,11 +2,11 @@
   "works": [
     {
       "id": 1,
-      "img": "",
-      "languages": "REACT SCSS I18",
-      "title": "Portfolio for Compony",
+      "img": "1.jpg",
+      "languages": "REACT SCSS",
+      "title": "Moto - Shop",
       "text": "I'm currently working on this website",
-      "codes": "https://github.com/Web-Coders-uz/web-coders-portfolio"
+      "codes": "https://github.com/theyuunus/moto-shop"
     },
     {
       "id": 2,
@@ -30,7 +30,7 @@
       "img": "4.jpg",
       "languages": "REACT CSS",
       "title": "Netflix Clone (One Page)",
-      "text": "If you want to see movie, you can find from this website",
+      "text": "If you want to see movie, you can find from this website (I made from youtube)",
       "live": "https://theyuunus-netflix-clone.netlify.app/",
       "codes": "https://github.com/theyuunus/Netfilx-Clone"
     },
