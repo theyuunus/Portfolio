@@ -18,7 +18,7 @@ export default function Footer() {
                                     <img className="navbar-left-a-img" src={Logo} alt="" />
                                     <h2 className="navbar-left-a-h2">Yunus</h2>
                                 </Link>
-                                <a className="footer-top-left-div-a" href="mailto:obidxojayevbotir@gmail.com" target='_blank' rel="noopener noreferrer">obidxojayevbotir@gmail.com</a>
+                                <a className="footer-top-left-div-a" href="mailto:theyuunus@gmail.com" target='_blank' rel="noopener noreferrer">theyuunus@gmail.com</a>
                             </div>
                             <p className="footer-top-left-p">
                                 HTML - layout designer and Front-end developer
