@@ -19,12 +19,12 @@
                     font-style: normal;
                     font-weight: 400;
                     line-height: normal;
-                    transition: 1s;
+                    transition: 0.5s;
                 }
 
                 &-a:hover {
                     color: var(--white, #FFF);
-                    transition: 1s;
+                    transition: 0.5s;
                 }
             }
 
