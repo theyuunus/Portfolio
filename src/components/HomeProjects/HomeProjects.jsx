@@ -41,7 +41,7 @@ export default function HomeProjects() {
                     </div>
                     <div className='homeProjects-cards'>
                         <div className='homeProjects-cards-dots'></div>
-                        <div className='homeProjects-cards-card'>
+                        <div className='homeProjects-cards'>
                             {projects ? (
                                 projects.slice(0, 3).map((project) => (
                                     <div style={{ alignItems: 'start' }} key={project.id}>
