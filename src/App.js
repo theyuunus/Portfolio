@@ -7,9 +7,11 @@ function App() {
   console.clear()
   return (
     <Fragment>
-      <Navigation />
-      <PageMap />
-      <Footer />
+      <main className='main'>
+        <Navigation />
+        <PageMap />
+        <Footer />
+      </main>
     </Fragment>
   );
 }
