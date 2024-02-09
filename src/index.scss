@@ -19,10 +19,15 @@ body {
     --color-4: #00adb5;
 }
 
-.root {
+.main {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+
+    &>* {
+        flex-shrink: 0;
+    }
 }
 
 
