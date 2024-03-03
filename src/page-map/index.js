@@ -1,51 +1,53 @@
-import Home from "../pages/home/home"
-import About from "../pages/about/about"
-import Work from "../pages/work/work"
-import Contact from "../pages/contact/contact"
-import { Fragment } from "react"
-import { Route, Routes } from "react-router-dom"
+import React, { Fragment } from 'react';
+import { Route, Routes } from 'react-router-dom';
+import About from '../Pages/About/About';
+import Contact from '../Pages/Contact/Contact';
+import Home from '../Pages/Home/Home';
+import Projects from '../Pages/Projects/Projects';
 
-const Pages = [
+export const Pages = [
     {
         id: 1,
-        path: "/",
-        title: "Home",
-        element: <Home title={"Home"} />,
+        path: '/',
+        element: <Home />,
+        name: 'Home',
     },
     {
-        id: 1,
-        path: "/about",
-        title: "About",
-        element: <About title={"About"} />,
+        id: 2,
+        path: '/works',
+        element: <Projects />,
+        name: 'Works',
     },
     {
         id: 3,
-        path: "/work",
-        title: "Work",
-        element: <Work title={"Work"} />,
+        path: '/about-me',
+        element: <About />,
+        name: 'About',
     },
     {
         id: 4,
-        path: "/contact",
-        title: "Contact",
-        element: <Contact title={"Contact"} />,
+        path: '/contact',
+        element: <Contact />,
+        name: 'Contact',
     },
-]
+];
 
-const PageMap = () => {
+const Routers = () => {
     const page = Pages.map(({ id, path, element }) => {
         return (
             <Fragment key={id}>
                 <Route path={path} element={element} />
             </Fragment>
-        );
+        )
     });
+
     return (
         <Fragment>
             <Routes>
                 {page}
             </Routes>
         </Fragment>
-    )
-}
-export { Pages, PageMap }
+    );
+};
+
+export default Routers;

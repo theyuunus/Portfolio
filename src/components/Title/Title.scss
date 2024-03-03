@@ -1,0 +1,22 @@
+.title {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+
+    &-text {
+        display: flex;
+        align-items: center;
+        font-weight: 500;
+        font-size: 32px;
+        color: #fff;
+
+        &-span {
+            color: var(--color-2);
+        }
+    }
+
+    &-hr {
+        width: 511px;
+        border: 1px solid var(--color-2);
+    }
+}
