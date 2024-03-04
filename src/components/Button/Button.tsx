@@ -4,23 +4,24 @@ import './Button.scss';
 interface ButtonProps {
     className?: string;
     link?: string;
+    title?: string
 }
 
-const ButtonLive: React.FC<ButtonProps> = ({ className = "button-live", link }) => {
+const ButtonLive: React.FC<ButtonProps> = ({ className = "button-live", link, title }) => {
     return (
         <a target="_blank" rel="noopener noreferrer" href={link}>
             <button className={className}>
-                Live {'<~>'}
+                {title}
             </button>
         </a>
     );
 };
 
-const ButtonDemo: React.FC<ButtonProps> = ({ className = "button-demo", link }) => {
+const ButtonDemo: React.FC<ButtonProps> = ({ className = "button-demo", link, title }) => {
     return (
         <a target="_blank" rel="noopener noreferrer" href={link}>
             <button className={className}>
-                Demo {'|>'}
+                {title}
             </button>
         </a>
     );

@@ -51,3 +51,14 @@ ol,
 ul {
     list-style: none;
 }
+
+.icon {
+    width: 31px;
+    height: 31px;
+    color: var(--color-1);
+    transition: color 0.3s ease-in-out;
+}
+
+.icon:hover {
+    color: var(--color-3);
+}
