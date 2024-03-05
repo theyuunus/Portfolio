@@ -4,6 +4,7 @@ import Container from "../Container/Container";
 import { FaGithub, FaTelegram } from "react-icons/fa";
 import Text from "../Text/Text";
 import { Link, NavLink } from "react-router-dom";
+import Logo from "../../images/Logo/Logo.png"
 
 const Navbar: React.FC = () => {
     const pages = [
@@ -19,21 +20,24 @@ const Navbar: React.FC = () => {
                 <div className="navbar__social">
                     <div className="navbar__social-line"></div>
                     <div className="navbar__social-icons">
-                        <a href="https://github.com/theyuunus">
+                        <a href="https://github.com/theyuunus" target="_blank" rel="noopener noreferrer">
                             <FaGithub className="icon" />
                         </a>
-                        <a href="https://t.me/theyuunus">
+                        <a href="https://t.me/theyuunus" target="_blank" rel="noopener noreferrer">
                             <FaTelegram className="icon" />
                         </a>
                     </div>
                 </div>
                 <Container>
                     <div className="navbar__navigation">
-                        <div className="navbar__logo">
-                            <Link to={"/"}>
-                                <Text as="h1" className="navbar__logo-title">Yunus</Text>
-                            </Link>
-                        </div>
+                        <Link to={"/"} className="navbar__logo">
+                            <img
+                                src={Logo}
+                                alt="Logo"
+                                className="navbar__logo-img"
+                            />
+                            <Text as="h1" className="navbar__logo-title">Yunus</Text>
+                        </Link>
                         <div className="navbar__links">
                             {pages.map((page, index) => (
                                 <NavLink
