@@ -3,7 +3,7 @@
     justify-content: space-between;
     align-items: self-start;
 
-    .active-link {
+    .active {
         color: var(--color-3);
         font-weight: 500;
     }
@@ -33,10 +33,18 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding-top: 20px;
+        padding-top: 25px;
     }
 
     &__logo {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        &-img {
+            width: 16px;
+             height: 16px;
+        }
 
         &-title {
             color: var(--color-3);
