@@ -38,14 +38,14 @@ const Navbar: React.FC = () => {
                             />
                             <Text as="h1" className="navbar__logo-title">Yunus</Text>
                         </Link>
-                        <div className="navbar__links">
+                        <div className="navbar__row">
                             {pages.map((page, index) => (
                                 <NavLink
                                     key={index}
                                     to={page.to}
-                                    className="navbar__links-link"
+                                    className="navbar__row-link"
                                 >
-                                    <span className="navbar__links-link-span">#</span>{page.text}
+                                    <span className="navbar__row-link-span">#</span>{page.text}
                                 </NavLink>
                             ))}
                         </div>
