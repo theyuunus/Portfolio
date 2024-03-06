@@ -18,6 +18,7 @@ body {
 }
 
 .main {
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -60,5 +61,22 @@ ul {
 }
 
 .icon:hover {
+    color: var(--color-3);
+}
+
+.h1 {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 31px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--color-3);
+}
+
+.p-white {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
     color: var(--color-3);
 }
