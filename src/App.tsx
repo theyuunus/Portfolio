@@ -1,5 +1,6 @@
 import Pages from "./page-map";
 import Navbar from "./components/Navbar/Navbar";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   console.clear()
@@ -7,6 +8,7 @@ function App() {
     <main className="main">
       <Navbar />
       <Pages />
+      <Footer />
     </main>
   );
 }

@@ -1,0 +1,49 @@
+.footer {
+    border-top: 1px solid var(--color-1);
+    margin-top: 145px;
+    padding: 32px 0;
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        align-items: self-start;
+
+        &-logo {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            align-items: start;
+
+            &-email {
+                color: var(--color-1);
+                transition: color 0.3s ease-in-out;
+            }
+
+            &-email:hover {
+                color: var(--color-3);
+            }
+        }
+
+        &-media {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            align-items: start;
+
+            &-icons {
+                display: flex;
+                gap: 12px;
+                align-items: center;
+            }
+        }
+    }
+
+    &__bottom {
+        text-align: center;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 21px;
+        color: var(--color-1);
+        padding-top: 48px;
+    }
+}
