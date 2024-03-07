@@ -4,9 +4,8 @@ import Helmet from "../../components/Helmet/Helmet"
 import Container from "../../components/Container/Container"
 import { Heading, Title } from "../../components/Title/Title"
 import Text from "../../components/Text/Text"
-import { TbMailCode } from "react-icons/tb";
 import { FaGithub, FaInstagram, FaLinkedin, FaTelegram } from "react-icons/fa";
-import UmmaLife from "../../images/umma-life/umma-life.png"
+import { FaMailBulk } from "react-icons/fa";
 
 const Contact: React.FC = () => {
     return (
@@ -28,13 +27,13 @@ const Contact: React.FC = () => {
                                 <Text className="p-white contact__row-message-title">
                                     Message me here
                                 </Text>
-                                <a className="contact__row-message-a" href="mailto:theyuunus@gmail.com" target="_blank" rel="noopener noreferrer">
-                                    <TbMailCode className="contact__row-message-a-icon" />
-                                    <Text>theyuunus@gmail.com</Text>
-                                </a>
                                 <a className="contact__row-message-a" href="https://t.me/theyuunus" target="_blank" rel="noopener noreferrer">
-                                    <FaTelegram className="contact__row-message-a-icon" />
-                                    <Text>@theyuunus</Text>
+                                    <FaTelegram className="icon" />
+                                    <Text>theyuunus</Text>
+                                </a>
+                                <a className="contact__row-message-a" href="mailto:theyuunus@gmail.com" target="_blank" rel="noopener noreferrer">
+                                    <FaMailBulk className="icon" />
+                                    <Text>theyuunus@gmail.com</Text>
                                 </a>
                             </div>
                         </div>
@@ -53,8 +52,8 @@ const Contact: React.FC = () => {
                                 <a href="https://www.linkedin.com/in/theyuunus/" target="_blank" rel="noopener noreferrer">
                                     <FaLinkedin className="icon" />
                                 </a>
-                                <a href="https://ummalife.com/theyuunus" target="_blank" rel="noopener noreferrer">
-                                    <img src={UmmaLife} alt="umma-life" className="icon" />
+                                <a href="mailto:theyuunus@gmail.com" target="_blank" rel="noopener noreferrer">
+                                    <FaMailBulk className="icon" />
                                 </a>
                             </div>
                         </div>
