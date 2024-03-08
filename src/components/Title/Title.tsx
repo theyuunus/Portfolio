@@ -1,11 +1,7 @@
 import React from 'react';
 import Text from '../Text/Text';
 import './Title.scss';
-
-interface TitleProps {
-    className?: string;
-    title?: string;
-}
+import { TitleProps } from '../../interfase/Title';
 
 const TitleHr: React.FC<TitleProps> = ({ title }) => {
     return (
