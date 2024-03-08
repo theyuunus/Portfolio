@@ -61,4 +61,39 @@
             padding-top: 50px;
         }
     }
+
+    &__facts {
+        padding-top: 115px;
+
+        &-row {
+            display: flex;
+            justify-content: space-between;
+
+            &-wrap {
+                width: 676px;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 16px;
+                padding-top: 30px;
+
+                &-text {
+                    border: 1px solid var(--color-1);
+                    color: var(--color-1);
+                    padding: 8px;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 21px;
+
+                    &-span {
+                        color: var(--color-3);
+                    }
+                }
+            }
+
+            &-img {
+                padding-top: 30px;
+                padding-right: 90px;
+            }
+        }
+    }
 }

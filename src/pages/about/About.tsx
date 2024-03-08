@@ -6,6 +6,7 @@ import { Heading, Title } from "../../components/Title/Title"
 import Text from "../../components/Text/Text"
 import Person from "../../images/About/Person/Person.png"
 import Skills from "../../components/Skills/Skills"
+import Logo from "../../images/Logo-2/logo.png"
 
 const About: React.FC = () => {
     return (
@@ -38,6 +39,21 @@ const About: React.FC = () => {
                             <Title title="skills" />
                             <div className="about__skills-row">
                                 <Skills />
+                            </div>
+                        </div>
+                        <div className="about__facts">
+                            <Title title="my-fun-facts" />
+                            <div className="about__facts-row">
+                                <div className="about__facts-row-wrap">
+                                    <Text className="about__facts-row-wrap-text">I like <span className="about__facts-row-wrap-text-span">summer</span> more than <span className="about__facts-row-wrap-text-span">winter</span></Text>
+                                    <Text className="about__facts-row-wrap-text">I sometimes hang out with my friends</Text>
+                                    <Text className="about__facts-row-wrap-text">I am still in school</Text>
+                                    <Text className="about__facts-row-wrap-text">I often play <span className="about__facts-row-wrap-text-span">football</span> with my friends</Text>
+                                    <Text className="about__facts-row-wrap-text">I favorite food is <span className="about__facts-row-wrap-text-span">plov</span></Text>
+                                </div>
+                                <div className="about__facts-row-img">
+                                    <img src={Logo} alt="" />
+                                </div>
                             </div>
                         </div>
                     </div>

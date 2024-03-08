@@ -1,11 +1,6 @@
 import React from "react";
 import './Button.scss';
-
-interface ButtonProps {
-    className?: string;
-    link?: string;
-    title?: string
-}
+import { ButtonProps } from "../../interfase/Button";
 
 const ButtonLive: React.FC<ButtonProps> = ({ className = "button-live", link, title }) => {
     return (
