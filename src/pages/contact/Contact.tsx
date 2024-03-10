@@ -4,8 +4,8 @@ import Helmet from "../../components/Helmet/Helmet"
 import Container from "../../components/Container/Container"
 import { Heading, Title } from "../../components/Title/Title"
 import Text from "../../components/Text/Text"
-import { FaGithub, FaInstagram, FaLinkedin, FaTelegram } from "react-icons/fa";
-import { FaMailBulk } from "react-icons/fa";
+import { FaGithub, FaInstagram, FaLinkedin, FaTelegram, FaMailBulk } from "react-icons/fa";
+// import { FaMailBulk } from "react-icons/fa";
 
 const Contact: React.FC = () => {
     return (
