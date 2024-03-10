@@ -1,0 +1,108 @@
+.home {
+    margin-top: 65px;
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &-texts {
+
+            &-title {
+                color: var(--color-3);
+                font-weight: 600;
+                font-size: 32px;
+                line-height: 41.98px;
+
+                span {
+                    color: var(--color-2);
+                }
+            }
+
+            &-text {
+                width: 463px;
+                color: var(--color-1);
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 25px;
+                padding: 50px 0 25px;
+            }
+        }
+
+        &-img {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            &::after {
+                content: "";
+                display: block;
+                width: 155px;
+                height: 155px;
+                background-image: url("../../images/Logo-2/logo.png");
+                background-repeat: no-repeat;
+                position: absolute;
+                z-index: -1;
+                top: 230px;
+                right: 500px;
+            }
+
+            &::before {
+                content: "";
+                display: block;
+                width: 84px;
+                height: 84px;
+                background: url("../../images/dots/dot-1/dot-1.png");
+                position: absolute;
+                right: 250px;
+                top: 350px;
+            }
+
+            &-bottom {
+                width: 402px;
+                display: flex;
+                gap: 10px;
+                align-items: center;
+                border: 1px solid var(--color-1);
+                padding: 8px;
+
+                &-rectangle {
+                    background-color: var(--color-2);
+                    width: 16px;
+                    height: 16px;
+                }
+
+                &-text {
+                    color: var(--color-1);
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 20.99px;
+
+                    span {
+                        color: var(--color-3);
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+    }
+
+    &__about {
+        padding-top: 115px;
+
+        &-wrap {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+    }
+
+    &__contact {
+        padding-top: 115px;
+
+        &-row {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}

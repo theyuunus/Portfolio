@@ -4,7 +4,7 @@ import Helmet from "../../components/Helmet/Helmet"
 import Container from "../../components/Container/Container"
 import { Heading, Title } from "../../components/Title/Title"
 import Text from "../../components/Text/Text"
-import Person from "../../images/About/Person/Person.png"
+import AboutPerson from "../../images/Person/Person-2/Person-2.png"
 import Skills from "../../components/Skills/Skills"
 import Logo from "../../images/Logo-2/logo.png"
 
@@ -30,7 +30,7 @@ const About: React.FC = () => {
                             </Text>
                             <div className="about__main-img">
                                 <img
-                                    src={Person}
+                                    src={AboutPerson}
                                     alt="Person"
                                 />
                             </div>
