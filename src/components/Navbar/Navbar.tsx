@@ -9,7 +9,7 @@ import Logo from "../../images/Logo/Logo.png"
 const Navbar: React.FC = () => {
     const pages = [
         { to: "/", text: "home" },
-        { to: "/work", text: "work" },
+        { to: "/works", text: "work" },
         { to: "/about-me", text: "about" },
         { to: "/contact", text: "contact" },
     ];

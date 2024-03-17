@@ -1,0 +1,30 @@
+.projects {
+    margin-top: 65px;
+
+    &-title {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    &__cards {
+        padding-top: 75px;
+
+        &-row {
+            display: flex;
+            gap: 16px;
+            align-items: self-start;
+            padding-top: 45px;
+        }
+    }
+}
+
+.loading-spinner, .error-message {
+    color: var(--color-3);
+    text-align: center;
+    padding-top: 70px;
+}
+
+.small__projects {
+    padding-top: 80px;
+}
