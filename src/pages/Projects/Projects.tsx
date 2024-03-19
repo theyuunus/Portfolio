@@ -19,7 +19,7 @@ const Projects: React.FC = () => {
                 const response = await axios.get<ProjectsProps[]>('https://portfolio-beckend-production.up.railway.app/works');
                 setProjects(response.data);
             } catch (error) {
-                setError('Unable to fetch projects. Please try again later.');
+                setError('Unable to fetch projects. Please try again later: ' + error);
             } finally {
                 setLoading(false);
             }
@@ -47,7 +47,7 @@ const Projects: React.FC = () => {
                             <div className="projects__cards">
                                 <Title title="complete-apps" />
                                 <div className="projects__cards-row">
-                                    {projects.map((project) => (
+                                    {projects.slice(0, 1).map((project) => (
                                         <Fragment key={project.id}>
                                             <Card
                                                 image={project.img}
@@ -66,9 +66,27 @@ const Projects: React.FC = () => {
                     <div className="small__projects">
                         <Title title="small-projects" />
                         <div className="projects__cards-row">
-                            {/* <SmallCard 
-                                
-                            /> */}
+                            {loading ? (
+                                <Text as="h1" className="loading-spinner">Loading...</Text>
+                            ) : error ? (
+                                <Text as="h1" className="error-message">{error}</Text>
+                            ) : (
+                                <div className="projects__cards">
+                                    <Title title="small-projects" />
+                                    <div className="projects__cards-row">
+                                        {projects.slice(2, 5).map((smallProject) => (
+                                            <Fragment key={smallProject.id}>
+                                                <SmallCard
+                                                    languages={smallProject.languages}
+                                                    title={smallProject.title}
+                                                    text={smallProject.text}
+                                                    demo={smallProject.demo}
+                                                />
+                                            </Fragment>
+                                        ))}
+                                    </div>
+                                </div>
+                            )}
                         </div>
                     </div>
                 </Container>
