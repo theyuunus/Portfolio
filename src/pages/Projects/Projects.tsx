@@ -16,12 +16,11 @@ const Projects: React.FC = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await axios.get<ProjectsProps[]>('https://portfolio-beckend-production.up.railway.app/works');
+                const response = await axios.get('https://portfolio-beckend-production.up.railway.app/works');
                 setProjects(response.data);
+                setLoading(false);
             } catch (error) {
                 setError('Unable to fetch projects. Please try again later: ' + error);
-            } finally {
-                setLoading(false);
             }
         };
 
@@ -65,29 +64,26 @@ const Projects: React.FC = () => {
                     </div>
                     <div className="small__projects">
                         <Title title="small-projects" />
-                        <div className="projects__cards-row">
-                            {loading ? (
-                                <Text as="h1" className="loading-spinner">Loading...</Text>
-                            ) : error ? (
-                                <Text as="h1" className="error-message">{error}</Text>
-                            ) : (
-                                <div className="projects__cards">
-                                    <Title title="small-projects" />
-                                    <div className="projects__cards-row">
-                                        {projects.slice(2, 5).map((smallProject) => (
-                                            <Fragment key={smallProject.id}>
-                                                <SmallCard
-                                                    languages={smallProject.languages}
-                                                    title={smallProject.title}
-                                                    text={smallProject.text}
-                                                    demo={smallProject.demo}
-                                                />
-                                            </Fragment>
-                                        ))}
-                                    </div>
+                        {loading ? (
+                            <Text as="h1" className="loading-spinner">Loading...</Text>
+                        ) : error ? (
+                            <Text as="h1" className="error-message">{error}</Text>
+                        ) : (
+                            <div className="projects__cards">
+                                <div className="projects__cards-row">
+                                    {projects.slice(2, 7).map((smallProject) => (
+                                        <Fragment key={smallProject.id}>
+                                            <SmallCard
+                                                languages={smallProject.languages}
+                                                title={smallProject.title}
+                                                text={smallProject.text}
+                                                demo={smallProject.demo}
+                                            />
+                                        </Fragment>
+                                    ))}
                                 </div>
-                            )}
-                        </div>
+                            </div>
+                        )}
                     </div>
                 </Container>
             </Helmet>

@@ -87,6 +87,20 @@
         }
     }
 
+    &__projects {
+        padding-top: 115px;
+
+        &-title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            a {
+                color: var(--color-3);
+            }
+        }
+    }
+
     &__about {
         padding-top: 115px;
 
