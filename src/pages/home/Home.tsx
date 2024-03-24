@@ -1,4 +1,4 @@
-import { Fragment } from "react/jsx-runtime"
+import React, { Fragment, useEffect, useState } from "react";
 import './Home.scss'
 import Helmet from "../../components/Helmet/Helmet"
 import Container from "../../components/Container/Container"
@@ -9,8 +9,28 @@ import Person from "../../images/Person/Person-1/Person-1.png"
 import { TitleHr } from "../../components/Title/Title"
 import AboutPerson from "../../images/Person/Person-2/Person-2.png"
 import { FaTelegram, FaMailBulk } from "react-icons/fa";
+import { ProjectsProps } from "../../interfase/Projects";
+import axios from "axios";
+import { Card } from "../../components/Card/Card";
 
 const Home: React.FC = () => {
+    const [projects, setProjects] = useState<ProjectsProps[]>([]);
+    const [loading, setLoading] = useState<boolean>(true);
+    const [error, setError] = useState<string | null>(null);
+
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const response = await axios.get('https://portfolio-beckend-production.up.railway.app/works');
+                setProjects(response.data);
+                setLoading(false);
+            } catch (error) {
+                setError('Unable to fetch projects. Please try again later: ' + error);
+            }
+        };
+
+        fetchData();
+    }, []);
     return (
         <Fragment>
             <Helmet title="Home">
@@ -38,6 +58,32 @@ const Home: React.FC = () => {
                                 </div>
                             </div>
                         </header>
+                        <section className="home__projects">
+                            <div className="home__projects-title">
+                                <TitleHr title="projects" />
+                                <Link to={"/works"}>View all {'~~>'}</Link>
+                            </div>
+                            {loading ? (
+                                <Text as="h1" className="loading-spinner">Loading...</Text>
+                            ) : error ? (
+                                <Text as="h1" className="error-message">{error}</Text>
+                            ) : (
+                                <div className="projects__cards-row">
+                                    {projects.slice(0, 3).map((project) => (
+                                        <Fragment key={project.id}>
+                                            <Card
+                                                image={project.img}
+                                                languages={project.languages}
+                                                title={project.title}
+                                                text={project.text}
+                                                link={project.link}
+                                                demo={project.demo}
+                                            />
+                                        </Fragment>
+                                    ))}
+                                </div>
+                            )}
+                        </section>
                         <div className="home__about">
                             <TitleHr title="about-me" />
                             <div className="home__about-row">
