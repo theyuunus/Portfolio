@@ -16,6 +16,10 @@
         position: fixed;
         padding-left: 70px;
 
+        @media (max-width: 1350px){
+            display: none;
+        }
+
         &-line {
             width: 1px;
             height: 161px;
