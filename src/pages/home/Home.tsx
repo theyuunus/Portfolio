@@ -115,15 +115,15 @@ const Home: React.FC = () => {
                                 <Text className="contact__row-text">
                                     I’m interested in freelance opportunities. However, if you have other request or question, don’t hesitate to contact me
                                 </Text>
-                                <div className="contact__row-message">
-                                    <Text className="p-white contact__row-message-title">
+                                <div className="contact__row-items-message">
+                                    <Text className="p-white contact__row-items-message-title">
                                         Message me here
                                     </Text>
-                                    <a className="contact__row-message-a" href="https://t.me/theyuunus" target="_blank" rel="noopener noreferrer">
+                                    <a className="contact__row-items-message-a" href="https://t.me/theyuunus" target="_blank" rel="noopener noreferrer">
                                         <FaTelegram className="icon" />
                                         <Text>theyuunus</Text>
                                     </a>
-                                    <a className="contact__row-message-a" href="mailto:theyuunus@gmail.com" target="_blank" rel="noopener noreferrer">
+                                    <a className="contact__row-items-message-a" href="mailto:theyuunus@gmail.com" target="_blank" rel="noopener noreferrer">
                                         <FaMailBulk className="icon" />
                                         <Text>theyuunus@gmail.com</Text>
                                     </a>
