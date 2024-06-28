@@ -49,7 +49,7 @@ const Home: React.FC = () => {
                                 </Link>
                             </div>
                             <div className="home__header-img">
-                                <img src={Person} alt="person" />
+                                <img src={Person} alt="person" className="home__header-img-person" />
                                 <div className="home__header-img-bottom">
                                     <div className="home__header-img-bottom-rectangle"></div>
                                     <Text className="home__header-img-bottom-text">
