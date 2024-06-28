@@ -8,11 +8,7 @@ export const Card: React.FC<CardProps> = ({ image, languages, title, text, link,
   return (
     <Fragment>
       <div className="card">
-        <img
-          src={image}
-          alt="error"
-          className="card-img"
-        />
+        <img src={image} alt={title} />
         <Text className="card-languages">{languages}</Text>
         <div className="card-wrap">
           <Text as='h1' className="card-wrap-title">{title}</Text>
