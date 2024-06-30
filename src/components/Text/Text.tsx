@@ -1,4 +1,6 @@
 import React from 'react';
+
+// interace
 import { TextProps } from '../../interfase/Text';
 
 const Text: React.FC<TextProps> = ({ as = "p", children, className }) => {

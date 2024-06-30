@@ -1,15 +1,9 @@
-import Pages from "./page-map";
-import Navbar from "./components/Navbar/Navbar";
-import Footer from "./components/Footer/Footer";
+import Layout from "./layout";
 
 function App() {
   console.clear()
   return (
-    <main className="main">
-      <Navbar />
-      <Pages />
-      <Footer />
-    </main>
+    <Layout />
   );
 }
 

@@ -1,26 +1,38 @@
-import React, { Fragment, useState } from "react";
-import { FaGithub, FaTelegram } from "react-icons/fa";
-import { Link, NavLink } from "react-router-dom";
+import React, { Fragment, useEffect, useState } from "react";
+
+// scss
+import "./Navbar.scss";
+import { NavbarPages } from "../../interfase/NavbarPages";
+
+// components
+import { Title } from "../Title/Title";
 import Logo from "../../images/Logo/Logo.png";
 import Container from "../Container/Container";
 import Text from "../Text/Text";
-import "./Navbar.scss";
 
-interface Page {
-    to: string;
-    text: string;
-}
+// links
+import { Link, NavLink } from "react-router-dom";
+
+// icons
+import { FaGithub, FaTelegram } from "react-icons/fa";
 
 const Navbar: React.FC = () => {
     const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
+
+    useEffect(() => {
+        const body = document.querySelector('body');
+        if (body) {
+            body.style.overflow = isMenuOpen ? "hidden" : "auto";
+        }
+    }, [isMenuOpen]);
 
     const toggleMenu = (): void => {
         setIsMenuOpen(prevState => !prevState);
     };
 
-    const pages: Page[] = [
+    const pages: NavbarPages[] = [
         { to: "/", text: "home" },
-        { to: "/works", text: "work" },
+        { to: "/works", text: "works" },
         { to: "/about-me", text: "about" },
         { to: "/contact", text: "contact" },
     ];
@@ -30,6 +42,7 @@ const Navbar: React.FC = () => {
             <nav className="navbar">
                 <div className="navbar__social">
                     <div className="navbar__social-line"></div>
+
                     <div className="navbar__social-icons">
                         <a href="https://github.com/theyuunus" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                             <FaGithub className="icon" />
@@ -39,14 +52,17 @@ const Navbar: React.FC = () => {
                         </a>
                     </div>
                 </div>
+
                 <Container>
                     <div className="navbar__navigation">
                         <Link to={"/"} className="navbar__logo">
                             <img src={Logo} alt="Logo" className="navbar__logo-img" />
+
                             <Text as="h1" className="navbar__logo-title">
                                 Yunus
                             </Text>
                         </Link>
+
                         <div className="navbar__row">
                             {pages.map((page, index) => (
                                 <NavLink
@@ -54,11 +70,11 @@ const Navbar: React.FC = () => {
                                     to={page.to}
                                     className="navbar__row-link"
                                 >
-                                    <span className="navbar__row-link-span">#</span>
-                                    {page.text}
+                                    <span className="navbar__row-link-span">#</span>{page.text}
                                 </NavLink>
                             ))}
                         </div>
+
                         <button className="navbar__media-icon" onClick={toggleMenu}>
                             {isMenuOpen ? (
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -74,17 +90,16 @@ const Navbar: React.FC = () => {
                             )}
                         </button>
                     </div>
+
                     {isMenuOpen && (
                         <div className="navbar__media-links">
                             {pages.map((page, index) => (
                                 <NavLink
                                     key={index}
                                     to={page.to}
-                                    className="navbar__row-link"
                                     onClick={toggleMenu}
                                 >
-                                    <span className="navbar__row-link-span">#</span>
-                                    {page.text}
+                                    <Title title={page.text} />
                                 </NavLink>
                             ))}
                         </div>

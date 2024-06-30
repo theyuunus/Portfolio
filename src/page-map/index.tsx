@@ -3,9 +3,10 @@ import { Route, Routes } from 'react-router-dom';
 import About from '../Pages/About/About';
 import Contact from '../Pages/Contact/Contact';
 import Home from '../Pages/Home/Home';
-import Projects from '../Pages/Projects/Projects';
+import Works from '../Pages/Works/Works';
+import { PageMap } from '../interfase/PageMap';
 
-export const Pages = [
+export const Pages: PageMap[] = [
     {
         id: 1,
         path: '/',
@@ -15,7 +16,7 @@ export const Pages = [
     {
         id: 2,
         path: '/works',
-        element: <Projects />,
+        element: <Works />,
         name: 'Works',
     },
     {
@@ -32,21 +33,17 @@ export const Pages = [
     },
 ];
 
-const Routers = () => {
-    const page = Pages.map(({ id, path, element }) => {
-        return (
-            <Fragment key={id}>
-                <Route path={path} element={element} />
-            </Fragment>
-        )
-    });
+const Routers: React.FC = () => {
+    const page = Pages.map(({ id, path, element }) => (
+        <Fragment key={id}>
+            <Route path={path} element={element} />
+        </Fragment>
+    ));
 
     return (
-        <Fragment>
-            <Routes>
-                {page}
-            </Routes>
-        </Fragment>
+        <Routes>
+            {page}
+        </Routes>
     );
 };
 

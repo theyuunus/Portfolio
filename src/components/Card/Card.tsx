@@ -1,6 +1,12 @@
 import React, { Fragment } from 'react';
+
+// sccs
 import './Card.scss';
+
+// interface
 import { CardProps } from '../../interfase/card';
+
+// components
 import Text from '../Text/Text';
 import { ButtonDemo, ButtonLive } from '../Button/Button';
 
@@ -8,7 +14,11 @@ export const Card: React.FC<CardProps> = ({ image, languages, title, text, link,
   return (
     <Fragment>
       <div className="card">
-        <img src={image} alt={title} />
+        <img
+          src={image}
+          alt={title}
+          className='card-img'
+        />
         <Text className="card-languages">{languages}</Text>
         <div className="card-wrap">
           <Text as='h1' className="card-wrap-title">{title}</Text>

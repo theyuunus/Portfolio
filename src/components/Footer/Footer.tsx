@@ -1,9 +1,19 @@
 import { Fragment } from "react/jsx-runtime"
+
+// scss
 import './Footer.scss'
+
+// components
 import Container from "../Container/Container"
 import Text from "../Text/Text"
+
+// link
 import { Link } from "react-router-dom"
+
+// image
 import Logo from "../../images/Logo/Logo.png"
+
+// icons
 import { FaGithub, FaInstagram, FaTelegram } from "react-icons/fa";
 
 const Footer: React.FC = () => {
