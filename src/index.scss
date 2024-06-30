@@ -7,7 +7,13 @@
     font-family: "Fira Code", monospace;
 }
 
-body {
+html,
+body,
+.root {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    scroll-behavior: smooth;
     background: #282c33;
 }
 
@@ -15,13 +21,6 @@ body {
     --color-1: #ABB2BF;
     --color-2: #C778DD;
     --color-3: #FFFFFF;
-}
-
-.main {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 }
 
 button,

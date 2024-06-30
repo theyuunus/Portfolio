@@ -1,5 +1,9 @@
 import React, { Fragment } from "react";
+
+// scss
 import './Skills.scss';
+
+// component
 import Text from "../Text/Text";
 
 const skillsData = [

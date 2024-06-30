@@ -54,4 +54,8 @@
     width: 331px;
     height: auto;
     border: 1px solid var(--color-1);
+
+    @media (max-width: 1060px) {
+        margin: auto;
+    }
 }

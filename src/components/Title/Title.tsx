@@ -1,6 +1,12 @@
 import React from 'react';
-import Text from '../Text/Text';
+
+// scss
 import './Title.scss';
+
+// component
+import Text from '../Text/Text';
+
+// interface
 import { TitleProps } from '../../interfase/Title';
 
 const TitleHr: React.FC<TitleProps> = ({ title }) => {

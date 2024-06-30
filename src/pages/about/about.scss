@@ -39,8 +39,6 @@
             width: 343px;
             margin: auto;
 
-            @media (max-width: 900px) {}
-
             img {
                 border-bottom: 1px solid var(--color-2);
             }
@@ -64,6 +62,10 @@
                 position: absolute;
                 bottom: 150px;
                 right: 10px;
+
+                @media (max-width: 900px) {
+                    display: none;
+                }
             }
         }
     }
